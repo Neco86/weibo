@@ -11,6 +11,8 @@ export const HeaderWrapper = styled.div`
     border-top: 2px solid #fa7d3c;
     box-shadow: 0 0 1px 0px rgba(0,0,0,0.15);
     display:flex;
+    background:#fff;
+    z-index:999;
 `
 export const Logo = styled.div`
     float:left;
