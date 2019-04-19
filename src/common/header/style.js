@@ -10,7 +10,6 @@ export const HeaderWrapper = styled.div`
     height: 48px;
     border-top: 2px solid #fa7d3c;
     box-shadow: 0 0 1px 0px rgba(0,0,0,0.15);
-    background: pink;
     display:flex;
 `
 export const Logo = styled.div`
@@ -23,9 +22,8 @@ export const Logo = styled.div`
 `
 export const Left = styled.div`
     float:left;
-    width:100%;
+    width:80%;
     height:46px;
-    background:#fff;
     .search{
         margin-top:8px;
         height:28px;
@@ -44,12 +42,23 @@ export const Left = styled.div`
             color:#000;
         }
     }
+    .iconfont{
+        color:#696e78;
+        font-size:20px;
+        position:absolute;
+        top:14px;
+        right:10%;
+        cursor:pointer;
+        &:hover{
+            color:#fa7d3c;
+        }
+    }
+
 `
 export const Right = styled.div`
     float:right;
     width:780px;
     height:100%;
-    background:blue;
     margin-right:50px;
     line-height:46px;
     font-size:14px;
@@ -57,12 +66,12 @@ export const Right = styled.div`
 export const NavList = styled.div`
     width:70%;
     height:46px;
-    background:yellow;
     float:left;
+    position:relative;
+    top:-3px;
 `
 export const Login = styled.div`
     width:30%;
-    background:purple;
     height:46px;
     float:left;
     .signup{
@@ -98,4 +107,58 @@ export const ListItem = styled.div`
     &:hover{
         color:#fa7d3c;
     }
+    .iconfont{
+        color:#696e78;
+        font-size:22px;
+        position:relative;
+        top:3px;
+    }
+`
+export const SearchListWrapper = styled.div`
+    height:374px;
+    padding:2px 6px;
+    width:90%;
+    max-width:470px;
+    border-radius:1px;
+    border:1px solid #ccc;
+    box-shadow: 0px 2px 8px 1px rgba(0,0,0,0.2);
+    background:#fff;
+    ul>li{
+        height:32px;
+        border:1px solid #fff;
+        margin:0 -4px;
+        line-height:34px;
+        cursor:pointer;
+        padding:0 10px;
+        font-size:12px;
+        &:hover{
+            background:#f2f2f5;
+            color:#fa7d3c;
+        }
+        &:nth-child(1){
+            color:#fa7d3c;
+        }
+        &:nth-child(2)>span{
+            background:#df3e3e;
+        }
+        &:nth-child(3)>span{
+            background:#fa7d3c;
+        }
+        span{  
+            background:#696e78;
+            color:#fff;
+            padding:0 5px;
+            width:12px;
+            border-radius:50px;
+            margin-right:5px;
+        }
+    }
+    display:none;
+    &.show{
+        display:block;
+    }
+`
+export const SearchWrapper = styled.div`
+    width:80%;
+    position:relative;
 `
