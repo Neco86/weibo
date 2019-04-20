@@ -24,14 +24,14 @@ export const Logo = styled.div`
 `
 export const Left = styled.div`
     float:left;
-    width:80%;
+    width:100%;
     height:46px;
     .search{
         margin-top:8px;
         height:28px;
+        box-sizing:border-box;  
         padding:0 6px;
-        width:90%;
-        max-width:470px;
+        width:100%;
         outline:none;
         border-radius:1px;
         background:#f2f2f5;
@@ -49,7 +49,7 @@ export const Left = styled.div`
         font-size:20px;
         position:absolute;
         top:14px;
-        right:10%;
+        right:5px;
         cursor:pointer;
         &:hover{
             color:#fa7d3c;
@@ -117,17 +117,16 @@ export const ListItem = styled.div`
     }
 `
 export const SearchListWrapper = styled.div`
-    height:374px;
+    height:380px;
     padding:2px 6px;
-    width:90%;
-    max-width:470px;
+    width:100%;
+    box-sizing:border-box;
     border-radius:1px;
     border:1px solid #ccc;
     box-shadow: 0px 2px 8px 1px rgba(0,0,0,0.2);
     background:#fff;
     ul>li{
-        height:32px;
-        border:1px solid #fff;
+        height:34px;
         margin:0 -4px;
         line-height:34px;
         cursor:pointer;
@@ -162,5 +161,6 @@ export const SearchListWrapper = styled.div`
 `
 export const SearchWrapper = styled.div`
     width:80%;
+    max-width:470px;
     position:relative;
 `

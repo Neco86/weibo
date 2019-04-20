@@ -1,6 +1,7 @@
 import React,{ useState,useEffect } from 'react';
 import { SearchListWrapper } from '../style.js'
 import axios from 'axios'
+
 function SearchList (props){
   const [hotList,setHotList]=useState([])
   useEffect(()=>{

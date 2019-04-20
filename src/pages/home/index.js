@@ -1,10 +1,12 @@
 import React from 'react';
 import Header from '../../common/header'
 import { Content,ContentLeft,ContentM,ContentRight } from './style.js'
+import Carousel from './components/carousel/carousel.js'
+import ListItem from './components/listItem/listItem.js'
 
 function Home (){
     return (
-      <div>
+      <>
         <Header/>
         <Content>
             <ContentLeft>
@@ -24,13 +26,14 @@ function Home (){
                 </ul>
             </ContentLeft>
             <ContentM>
-                
+                <Carousel/>
+                <ListItem/>
             </ContentM>
             <ContentRight>
                 
             </ContentRight>
         </Content>
-      </div>
+      </>
     );
 }
 

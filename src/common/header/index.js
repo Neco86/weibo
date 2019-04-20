@@ -23,8 +23,8 @@ function Header (){
             onBlur={handleBlur}
             />
             <i className="iconfont">&#xe8ef;</i>
+            <SearchList show={show} topSearch={topSearch}/>
           </SearchWrapper>
-          <SearchList show={show} topSearch={topSearch}/>
         </Left>
         <Right>
           <NavList>
